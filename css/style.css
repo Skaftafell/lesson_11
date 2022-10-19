@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@font-face {
+  font-family: "ArthurHill";
+  src: url("../fonts/ArthurHillRegular.woff2") format("woff2"),
+    url("../fonts/ArthurHillRegular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+   position: relative;
+}
+
+body {
+   font-family:Poppins, sans-serif ;
+}
+
+.container {
+   max-width: 1240px;
+   margin: 0 auto;
+   padding: 0 15px;
+   background-color: #8c8c8c;
+}
+
+/* ===HEADER === */
+
+.header {
+   position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    z-index: 100;
+}
+.header__wrap,
+.nav__menu {
+ display: flex;
+ align-items: center;
+}
+
+.logo {
+   margin-right: 70px;
+}
+
+.nav__link {
+   font-family: "ArthurHill", sans-serif;
+   text-transform: uppercase;
+   margin-right: 70px;
+   font-size: 30px;
+   color: rgb(1, 55, 4);
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
+
+h2 {
+   font-family: "ArthurHill", sans-serif;
+   text-transform: uppercase;
+   font-size: 30px;
+   margin-bottom: 40px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
+
+.nav__link:hover {
+   color: rgb(51, 224, 3);
+}
+
+h2:hover {
+   color: red;
+  
+}
+
+/* ===/HEADER === */
+
+/*=== STICKY ===*/
+
+.sti__one {
+   text-transform: capitalize;
+   background:#ff0064;
+   color:#009dff;
+   border:2px solid red;
+   margin-bottom:80px ;
+   position: sticky;
+   top: 80px;
+   z-index: 8;
+}
+
+/*=== /STICKY ===*/
+
+/*=== RELATIVE === */
+.sti,
+.rel,
+.abs {
+   padding: 80px 0px;
+   max-width: 810px;
+   min-height: 800px;
+   margin: 0 auto;
+   font-size: 25px;
+   text-align: center;
+}
+
+.rel__one,
+.rel__two,
+.rel__three,
+.rel__four,
+.abs__one,
+.abs__two,
+.abs__three,
+.abs__four   {
+   font-size: 30px;
+   text-transform: capitalize;
+   padding: 20px;
+}
+
+.rel__one {
+   background: linear-gradient(173deg,#00ff9b 0%, #009dff 80%);
+   background-color: cornflowerblue;
+}
+
+
+.rel__one:hover {
+   position: relative;
+   top: 30px;
+   left: -15px;
+}
+
+.rel__two {
+   background: linear-gradient(173deg,#ff0064 0%, #09ff00fe 80%);
+}
+
+.rel__two:hover {
+   position: relative;
+   top: -15px;
+   left: 25px;
+}
+
+.rel__three {
+   background: linear-gradient(300deg,#79ff00 0%, #ffce00 80%);
+}
+
+.rel__three:hover {
+   position: relative;
+   top: 20px;
+   left: 15px;
+}
+
+.rel__four {
+   background: linear-gradient(195deg,#ff0092 0%, #88ff00 80%);
+}
+/*=== /RELATIVE === */
+/*=== ABSOLUT === */
+
+.abs__one {
+   background: linear-gradient(300deg,#79ff00 0%, #ffce00 80%);
+}
+
+.abs__one:hover {
+   position: absolute;
+   top: 500px;
+   left: 300px;
+   width: 810px;
+   background: #ff0000;
+}
+
+.abs__two {
+   background: linear-gradient(195deg,#ff0092 0%, #88ff00 80%);
+}
+
+.abs__three {
+   background: linear-gradient(173deg,#00ff9b 0%, #009dff 80%);
+}
+.abs__four {
+   background: linear-gradient(173deg,#ff0064 0%, #09ff00fe 80%);
+}
+
+.abs__four:hover {
+   position: absolute;
+   top: 550px;
+   left: 300px;
+   width: 810px;
+   background: #91ff00;
+}
+/*=== /ABSOLUT === */
+/* ===CAR=== */
+.car {
+   position: relative;
+   max-width: 1240px;
+   min-height: 800px;
+   margin: 0 auto;
+   font-size: 25px;
+   text-align: center;
+}
+
+.car__top-left {
+   position: absolute;
+   
+}
+.car__top-right {
+   position: absolute;
+   left: 605px;
+}
+.car__bottom-left {
+   position: absolute;
+   top: 255px;
+   left: -10px; 
+}
+.car__bottom-right {
+   position: absolute;
+   top: 258px;
+   left: 605px;
+}
+
+/* ===/CAR=== */
